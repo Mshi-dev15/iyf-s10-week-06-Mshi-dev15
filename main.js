@@ -363,6 +363,14 @@ async function getUserPosts(){
 
 }
 
+//task 12.3
+{
+
+
+
+
+}
+
 
 
 

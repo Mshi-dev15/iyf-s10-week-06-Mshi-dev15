@@ -45,6 +45,14 @@ async function getWeather(city){
 }
 function displayWeather(data){
     cityName.textContent = `${data.name}, ${data.sys.country}`;
+    
+    temperature.textContent = `${Math.round(data.main.temp)}°C`;
+    description.textContent = data.weather[0].description;
+
+    humidity.textContent = `Humidity: ${data.main.humidity}%`;
+    wind.textContent = `Wind: ${data.wind.speed} m/s`;
+    pressure.textContent = `Pressure: ${data.main.pressure} hPa`;
+
     weatherDisplay.classList.remove("hidden");
 }
 function showloading(){
@@ -60,9 +68,21 @@ function showError(message){
 }
 function saveToHistory(city){
     // save to local
+    let history = JSON.parse(localStorage.getItem("history")) || [];
+
+    if (!history.includes(city)) {
+        history.push(city);
+        localStorage.setItem("history", JSON.stringify(history));
+    }
+
 }
 function loadHistory(){
     //load from localstorage
+    const history = JSON.parse(localStorage.getItem("history")) || [];
+
+    history.forEach(city => {
+        console.log("Previous search:", city);
+    });
 }
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
