@@ -4,8 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creat post</title>
+    <style>
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== HEADING ===== */
+h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+/* ===== LABELS ===== */
+label {
+  display: block;
+  color: #ccc;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+/* ===== INPUTS & TEXTAREA ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #7c6bff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #7c6bff, #a855f7);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== RESULT AREA ===== */
+#result {
+  margin-top: 24px;
+}
+
+/* ===== SUCCESS BOX ===== */
+.success-box {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 10px;
+  padding: 16px;
+  color: #86efac;
+}
+
+.success-box h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.success-box p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #d1fae5;
+}
+
+/* ===== ERROR BOX ===== */
+.error-box {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 10px;
+  padding: 16px;
+  color: #fca5a5;
+  font-size: 0.9rem;
+}
+
+    </style>
 </head>
 <body>
+    <div class="card">
     <h2>Creat New Post</h2>
     <form id="postForm">
 <input type="text" id="title"  placeholder="Title" required><br><br>
@@ -15,6 +162,7 @@
 <button type="submit">Create Post</button>
 </form>
 <h3>Result</h3>
+</div>
 <div id="result"></div>
 <script>
 
@@ -35,26 +183,23 @@
     } 
     return response.json
 }
-const Form =document.getElementById("postForm");
-const resultDiv =document.getElementById("results")
-postForm.addEventListener("submit",async (e)=>{
-    e.preventDefault();
+    document.getElementById("postForm").addEventListener("submit",async (e)=>{
+    e.preventDefault(); //stop page from refreshing
 
     const title = document.getElementById("title").value;
     const body = document.getElementById("body").value;
     const userId = document.getElementById("userId").value;
     try{
-        const newPost =await creatPost(title, body,userId);
-    resultDiv.innerHTML=`
-    <p><strong>Post Created</strong></p>
+        const newPost =await creatPost(title, body,number(userId));
+        document.getElementById("result").innerHTML=`
+    <h3>Post Created</h3>
     <p> ID: ${newPost.id}</p>
     <p>Title: ${newPost.title}</p>
     <p>${newPost.body}</p>`;
 }catch(error){
-    const message = error.message || error;
-    resultDiv.textContent = "Error:" + error.message
+    document.getElementById("result").innerText= "Error:" + error.message
 } 
-}); 
+});
 </script>
 </body>
 </html>

@@ -29,9 +29,9 @@
             const users = await response.json();
             displayUsers(users);
         }catch (error){
-            showerror(error.message);
+            showError(error.message);
         }finally{
-            hideLoading();
+            hideLoading();E
         }
         function showLoading(){
             loading.classList.remove("hidden");
