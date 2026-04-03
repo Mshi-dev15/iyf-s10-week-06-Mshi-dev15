@@ -10,6 +10,11 @@ This project consists of two main web applications: a **User Directory** and a *
 - The **User Directory** fetches data from an API, allowing users to search, sort, and filter a list of users by name, email, or city.  
 - The **Weather Dashboard** fetches current weather and forecast data for any city using the OpenWeatherMap API, displays weather details, and saves recent searches for quick access.
 
+## 🚀🚀Live Demo
+- [Display API Data](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Display-API-Data.html)
+- [Post Request](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Post-Request.html)
+- [Search & Filter](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Search-Filter.html)
+
 ## Technologies Used
 - HTML5
 - CSS3
@@ -55,5 +60,3 @@ Run a local server (e.g., Live Server in VSCode) to avoid CORS issues for API fe
 ![User Directory Screenshot]()  
 ![Weather Dashboard Screenshot]
 
-## Live Demo (if deployed)
-[View Live Demo]
