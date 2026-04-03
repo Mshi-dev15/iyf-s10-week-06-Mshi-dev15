@@ -11,6 +11,7 @@ This project consists of two main web applications: a **User Directory** and a *
 - The **Weather Dashboard** fetches current weather and forecast data for any city using the OpenWeatherMap API, displays weather details, and saves recent searches for quick access.
 
 ## 🚀🚀Live Demo
+- [Weather Dashboard](https://mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/)
 - [Display API Data](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Display-API-Data.html)
 - [Post Request](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Post-Request.html)
 - [Search & Filter](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Search-Filter.html)
