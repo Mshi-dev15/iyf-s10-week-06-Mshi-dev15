@@ -79,6 +79,6 @@ Run a local server (e.g., Live Server in VSCode) to avoid CORS issues for API fe
 ---
 
 ## Screenshots 
-![post Request Screenshot](iyf-s10-week-06-Mshi-dev15/images/Screenshot_4-4-2026_15130_127.0.0.1(1).jpeg)  
-![Weather Dashboard Screenshot](iyf-s10-week-06-Mshi-dev15/images/Screenshot_4-4-2026_145924_127.0.0.1(1).jpeg)
+![post Request Screenshot](https://raw.githubusercontent.com/Mshi-dev15/iyf-s10-week-06-Mshi-dev15/main/images/Screenshot_4-4-2026_15130_127.0.0.1(1).jpeg)  
+![Weather Dashboard Screenshot](https://raw.githubusercontent.com/Mshi-dev15/iyf-s10-week-06-Mshi-dev15/main/images/Screenshot_4-4-2026_145924_127.0.0.1(1).jpeg)
 
