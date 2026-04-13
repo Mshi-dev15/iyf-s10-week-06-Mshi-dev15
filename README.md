@@ -19,11 +19,16 @@ This project consists of two main web applications: a **User Directory** and a *
 
 ---
 
-## 🚀🚀Live Demo
-- [Weather Dashboard](https://mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/)
-- [Display API Data](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Display-API-Data.html)
-- [Post Request](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Post-Request.html)
-- [Search & Filter](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Search-Filter.html)
+## 🌐 Live Demos
+
+[![Weather Dashboard](https://img.shields.io/badge/⛅%20Weather%20Dashboard-274D6A?style=for-the-badge&logoColor=white)](https://mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/)
+<br><br>
+[![Display API Data](https://img.shields.io/badge/👥%20Display%20API%20Data-1572B6?style=for-the-badge&logoColor=white)](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Display-API-Data.html)
+<br><br>
+[![Post Request](https://img.shields.io/badge/📤%20Post%20Request-E34F26?style=for-the-badge&logoColor=white)](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Post-Request.html)
+<br><br>
+[![Search & Filter](https://img.shields.io/badge/🔍%20Search%20%26%20Filter-4CAF50?style=for-the-badge&logoColor=white)](https://Mshi-dev15.github.io/iyf-s10-week-06-Mshi-dev15/Lesson-12-Exercises/Search-Filter.html)
+
 
 ---
 
@@ -79,6 +84,9 @@ Run a local server (e.g., Live Server in VSCode) to avoid CORS issues for API fe
 ---
 
 ## Screenshots 
-![post Request Screenshot](https://raw.githubusercontent.com/Mshi-dev15/iyf-s10-week-06-Mshi-dev15/main/images/Screenshot_4-4-2026_15130_127.0.0.1(1).jpeg)  
+### 📤 Post Request
+![post Request Screenshot](https://raw.githubusercontent.com/Mshi-dev15/iyf-s10-week-06-Mshi-dev15/main/images/Screenshot_4-4-2026_15130_127.0.0.1(1).jpeg)
+
+### ⛅ Weather Dashboard
 ![Weather Dashboard Screenshot](https://raw.githubusercontent.com/Mshi-dev15/iyf-s10-week-06-Mshi-dev15/main/images/Screenshot_4-4-2026_145924_127.0.0.1(1).jpeg)
 
